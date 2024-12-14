@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+
+echo Checking out latest version...
+export GIT_DIR=/home/jde/todolist-automated-repo
+export GIT_WORK_TREE=/home/jde/todolist-automated
+git checkout -f main
+cd "$GIT_WORK_TREE"
+
+echo Deployment successful
